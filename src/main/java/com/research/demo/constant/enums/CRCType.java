@@ -1,0 +1,25 @@
+package com.research.demo.constant.enums;
+
+public enum CRCType {
+    crc4_itu,
+    crc5_epc,
+    crc5_itu,
+    crc5_usb,
+    crc6_itu,
+    crc7_mmc,
+    crc8,
+    crc8_itu,
+    crc8_rohc,
+    crc8_maxim,
+    crc16_ibm,
+    crc16_maxim,
+    crc16_usb,
+    crc16_modbus,
+    crc16_ccitt,
+    crc16_ccitt_false,
+    crc16_x25,
+    crc16_xmodem,
+    crc16_dnp,
+    crc32,
+    crc32_mpeg_2,
+}
