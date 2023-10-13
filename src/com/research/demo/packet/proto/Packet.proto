@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+message Packet {
+  uint32 crc = 1;
+  uint32 protocol = 2;
+  uint32 authInfoLength = 3;
+  authInfo authInfo = 4;
+  uint32 dataLength = 5;
+  bytes data = 6;
+}
+
+message authInfo {
+  tokenType tkt = 1;
+  algorithmType alg = 2;
+  bytes payload = 3;
+  bytes sign = 4;
+}
+
+enum tokenType {
+  JWT = 0;
+}
+enum algorithmType {
+  HMAC_SHA256 = 0;
+  RSA = 1;
+  AES = 2;
+}
